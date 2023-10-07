@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "category": "Concerts and Music Festivals",
+        "title": "Rock the Night",
+        "details": "An electrifying rock concert featuring top bands from around the world. Get ready to rock!",
+        "image": "rock_the_night.jpg",
+        "price": 50
+    },
+    {
+        "id": 2,
+        "category": "Comedy Shows",
+        "title": "Laugh Out Loud",
+        "details": "A night of non-stop laughter with the funniest comedians in the industry. Prepare to LOL!",
+        "image": "laugh_out_loud.jpg",
+        "price": 35
+    },
+    {
+        "id": 3,
+        "category": "Film Screenings and Premieres",
+        "title": "Blockbuster Movie Premiere",
+        "details": "Be among the first to see the most anticipated movie of the year. Don't miss it!",
+        "image": "movie_premiere.jpg",
+        "price": 40
+    },
+    {
+        "id": 4,
+        "category": "Theater and Performing Arts",
+        "title": "Dance Extravaganza",
+        "details": "Experience the magic of dance with breathtaking performances. A night of elegance!",
+        "image": "dance_extravaganza.jpg",
+        "price": 55
+    },
+    {
+        "id": 5,
+        "category": "Art Exhibitions",
+        "title": "Artistic Showcase",
+        "details": "Explore a stunning collection of contemporary art pieces from renowned artists. An art lover's dream!",
+        "image": "art_showcase.jpg",
+        "price": 20
+    },
+    {
+        "id": 6,
+        "category": "Theater and Performing Arts",
+        "title": "Shakespearean Play",
+        "details": "A classic Shakespearean play performed by a talented ensemble cast. A night of literary brilliance!",
+        "image": "shakespearean_play.jpg",
+        "price": 45
+    },
+    {
+        "id": 7,
+        "category": "Sports Events",
+        "title": "Championship Match",
+        "details": "Witness the intense competition as top athletes compete in a championship match. Feel the adrenaline!",
+        "image": "championship_match.jpg",
+        "price": 60
+    },
+    {
+        "id": 8,
+        "category": "Fashion Shows",
+        "title": "High Fashion Extravaganza",
+        "details": "Experience the latest fashion trends with top designers showcasing their collections. A night of glamour!",
+        "image": "fashion_extravaganza.jpg",
+        "price": 75
+    }
+]

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
-import map from '../../../public/google-map.png'
+import map from '../../Asset/google-map.png'
 
 const Footer = () => {
     return (
@@ -19,7 +19,7 @@ const Footer = () => {
                 <nav>
                     <header className="footer-title">Social</header>
                     <div className=" font-medium text-lg  space-y-5">
-                        <Link to='/' className="flex items-center gap-3  hover:text-red-800">Facebook <FaFacebookSquare></FaFacebookSquare>
+                        <Link className="flex items-center gap-3  hover:text-red-800">Facebook <FaFacebookSquare></FaFacebookSquare>
                         </Link>
                         <Link className="flex items-center gap-7  hover:text-red-800">Twitter <FaTwitterSquare></FaTwitterSquare>
                         </Link>
