@@ -2,6 +2,7 @@ import Service from "../Service/Service";
 import { useLoaderData } from "react-router-dom";
 import UpComingEvent from "../UpComingEvent/UpComingEvent";
 import Banner from "../Banner/Banner";
+import TeamPersons from "../Header/TeamPersons/TeamPersons";
 
 
 const Home = () => {
@@ -21,6 +22,11 @@ const Home = () => {
 
             </div>
             <UpComingEvent></UpComingEvent>
+            <div>
+                <TeamPersons>
+
+                </TeamPersons>
+            </div>
         </div>
 
     );

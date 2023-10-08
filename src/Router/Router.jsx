@@ -4,6 +4,7 @@ import Home from "../Components/Home/Home";
 import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
 import Features from "../Components/Features/Features";
+import Details from "../Components/Details/Details";
 
 const Router = createBrowserRouter([
     {
@@ -27,6 +28,11 @@ const Router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact></Contact>
+            },
+            {
+                path: '/details/:id',
+                element: <Details></Details>,
+                loader: () => fetch('Api.json')
             }
         ]
 
