@@ -4,11 +4,11 @@ import NavLogo from '../../Asset/NavLogo.jpg'
 
 const Header = () => {
     const navBar = <>
-        <NavLink to="/">Home </NavLink>
+        <NavLink to="/" className="px-4">Home </NavLink>
         <NavLink to="/features">Features </NavLink>
     </>
     return (
-        <div className="bg-slate-400 p-5" >
+        <div className="bg-cyan-100 rounded-sm glass p-5" >
             <div className="navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -21,8 +21,8 @@ const Header = () => {
                     </div>
                     <img src={NavLogo} alt="" className="h-28 w-52 border rounded-2xl " />
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                <div className="navbar-center  ">
+                    <ul className="text-2xl font-bold ">
                         {navBar}
                     </ul>
                 </div>

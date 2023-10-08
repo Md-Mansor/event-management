@@ -1,5 +1,6 @@
 import Service from "../Service/Service";
 import { useLoaderData } from "react-router-dom";
+import UpComingEvent from "../UpComingEvent/UpComingEvent";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
                 }
 
             </div>
+            <UpComingEvent></UpComingEvent>
         </div>
 
     );

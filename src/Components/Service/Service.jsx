@@ -15,7 +15,7 @@ const Service = ({ eventCard }) => {
                     <p>{title}</p>
 
                     <div className="card-actions justify-end">
-                        <button data-aos="zoom-in" className="btn btn-primary">Details</button>
+                        <button data-aos="zoom-in" className="btn btn-primary hover:btn-warning">Details</button>
                     </div>
                 </div>
             </div>

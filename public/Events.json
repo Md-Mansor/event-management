@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Music Festival",
+        "place": "City Park",
+        "time": "2:00 PM",
+        "date": "2023-11-05",
+        "entry_fee": 20,
+        "poster": "https://i.ibb.co/ftcThFT/Music-Festival-Poster-04-0063201905.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Art Exhibition",
+        "place": "Art Gallery",
+        "time": "6:30 PM",
+        "date": "2023-12-15",
+        "entry_fee": 10,
+        "poster": "https://i.ibb.co/Ry834p2/7576cd41c4b14d199ad6c535e18bcbbd.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Sports Events",
+        "place": "Downtown Square",
+        "time": "12:00 PM",
+        "date": "2024-01-20",
+        "entry_fee": "Free",
+        "poster": "https://i.ibb.co/61Mhc0B/07e0fe178642487-Y3-Jvc-Cwz-MDE5-LDIz-Nj-Is-ODUy-LDA.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Comedy Shows",
+        "place": "Convention Center",
+        "time": "9:00 AM",
+        "date": "2024-03-10",
+        "entry_fee": 50,
+        "poster": "https://i.ibb.co/NFd4Fj2/comedy-show-event-poster-1gn29.webp"
+    }
+]
