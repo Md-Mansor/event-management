@@ -2,21 +2,20 @@
 
 // eslint-disable-next-line react/prop-types
 const Service = ({ eventCard }) => {
-    console.log(eventCard);
+    // console.log(eventCard);
 
     const { category, title, pic, } = eventCard || {}
     return (
-        <div>
+        <div className="pb-10">
 
-            <div className="card border">
-                <figure><img src={pic} alt='img' className=" h-full w-full" /></figure>
+            <div className="hover:drop-shadow-2xl card border bg-cyan-50">
+                <figure><img src={pic} alt='img' className="h-56 w-full" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{category}</h2>
                     <p>{title}</p>
 
-                    <div className="card-actions justify-between">
-                        <button className="btn btn-primary">Details</button>
-                        <button className="btn btn-primary">Buy Now</button>
+                    <div className="card-actions justify-end">
+                        <button data-aos="zoom-in" className="btn btn-primary">Details</button>
                     </div>
                 </div>
             </div>
