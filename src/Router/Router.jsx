@@ -7,11 +7,13 @@ import Features from "../Components/Features/Features";
 import Details from "../Components/Details/Details";
 import LogIn from "../Components/LogIn/LogIn";
 import Register from "../Components/Register/Register";
+import Error from "../Components/Error/Error";
 
 const Router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',

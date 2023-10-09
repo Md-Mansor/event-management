@@ -29,7 +29,7 @@ const LogIn = () => {
                             </div>
                             <Link to="/register">
                                 <label className="label hover:text-blue-400 cursor-pointer">
-                                    <span className="text-lg">Don't have an account? please register Here</span>
+                                    <span className="text-lg">Do not have an account? please register Here</span>
                                 </label>
                             </Link>
                             <div className="form-control mt-6">
