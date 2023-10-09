@@ -13,8 +13,8 @@ const Footer = () => {
                     <header className="footer-title">Company</header>
                     <Link to="/about" className="">About</Link>
                     <Link to="/contact" className="">Contact us</Link>
-                    <Link to="/" className=""> us</Link>
-                    <Link to="/" className="">us</Link>
+                    <Link to="/" className="">Home</Link>
+                    <Link to="/features" className="">Features</Link>
                 </nav>
                 <nav>
                     <header className="footer-title">Social</header>
