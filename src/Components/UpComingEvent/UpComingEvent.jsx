@@ -11,7 +11,7 @@ const UpComingEvent = () => {
     return (
         <div>
 
-            <h1 className="text-center font-semibold text-4xl ">UP Coming Events  </h1>
+            <h1 className="text-center font-semibold text-4xl py-5">UP Coming Events  </h1>
             <Marquee pauseOnHover={true} speed={200}>
                 <h1 className="text-center font-semibold text-2xl border rounded-xl p-2  bg-rose-400 ">subscribe Us to get notify about Our New Events</h1>
             </Marquee>

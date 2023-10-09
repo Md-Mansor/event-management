@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import NavLogo from '../../Asset/NavLogo.jpg'
-
+import user from '../../Asset/user.png'
 
 const Header = () => {
     const navBar = <>
@@ -28,7 +28,10 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     <img src="" alt="" />
-                    <button className="btn">LOGIN</button>
+                    <Link to="/login">
+                        <img src={user} alt="" className="rounded-full h-12" />
+                    </Link>
+
                 </div>
             </div>
         </div>
