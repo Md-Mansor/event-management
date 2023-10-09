@@ -1,8 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 import NavLogo from '../../Asset/NavLogo.jpg'
-import user from '../../Asset/user.png'
+import png from '../../Asset/user.png'
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Header = () => {
+    const { logOut, user } = useContext(AuthContext)
+
+    const handelSignOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
+
     const navBar = <>
         <NavLink to="/" className="px-4">Home </NavLink>
         <NavLink to="/features">Features </NavLink>
@@ -27,10 +37,14 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <img src="" alt="" />
-                    <Link to="/login">
-                        <img src={user} alt="" className="rounded-full h-12" />
-                    </Link>
+
+
+                    <img src={png} alt="" className="rounded-full h-12" />
+
+                    {
+                        user ? <button onSubmit={handelSignOut} className="btn btn-secondary">Log Out </button> : <Link to="/login"> <button className="btn btn-secondary">log In </button></Link>
+
+                    }
 
                 </div>
             </div>
