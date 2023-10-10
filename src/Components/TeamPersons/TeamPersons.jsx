@@ -5,10 +5,10 @@ import p4 from '../../Asset/p4.avif'
 
 const TeamPersons = () => {
     return (
-        <div className='p-5 text-center'>
+        <div className='p-5 text-2xl font-bold text-center'>
             <h1>Meet Our Team</h1>
             <p>
-                “Interdependent people combine their own effort with the efforts of others to achieve their greatest success.”
+                “Interdependent people combine their own effort <br /> with the efforts of others to achieve their greatest success.”
             </p>
             <div className='grid grid-flow-row  lg:flex py-5  gap-5 justify-center '>
                 <div>

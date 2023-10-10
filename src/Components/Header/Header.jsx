@@ -9,13 +9,19 @@ const Header = () => {
 
     const handelSignOut = () => {
         logOut()
-            .then()
-            .catch()
+            .then(data => {
+                console.log(data);
+                // console.log('hitted');
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
+    console.log(user);
 
     const navBar = <>
         <NavLink to="/" className="px-4">Home </NavLink>
-        <NavLink to="/features">Features </NavLink>
+        <NavLink to="/history">History </NavLink>
     </>
     return (
         <div className="bg-cyan-100 rounded-sm glass p-5" >
@@ -39,10 +45,16 @@ const Header = () => {
                 <div className="navbar-end">
 
 
-                    <img src={png} alt="" className="rounded-full h-12" />
+
 
                     {
-                        user ? <button onSubmit={handelSignOut} className="btn btn-secondary">Log Out </button> : <Link to="/login"> <button className="btn btn-secondary">log In </button></Link>
+                        user ? (
+                            <div>
+                                <img src={png} alt="" className="rounded-full h-12" />
+                                <p>{user.email}</p>
+                                <button onClick={handelSignOut} className="btn btn-secondary">Log Out </button>
+                            </div>) :
+                            <Link to="/login"> <button className="btn btn-secondary">log In </button></Link>
 
                     }
 

@@ -3,11 +3,12 @@ import Root from "../Components/Layout/Root";
 import Home from "../Components/Home/Home";
 import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
-import Features from "../Components/Features/Features";
 import Details from "../Components/Details/Details";
 import LogIn from "../Components/LogIn/LogIn";
 import Register from "../Components/Register/Register";
 import Error from "../Components/Error/Error";
+import Private from "../Components/Private/Private";
+import History from "../Components/Purches/History";
 
 const Router = createBrowserRouter([
     {
@@ -26,8 +27,8 @@ const Router = createBrowserRouter([
                 element: <About></About>
             },
             {
-                path: '/features',
-                element: <Features></Features>
+                path: '/history',
+                element: <Private> <History></History> </Private>
             },
             {
                 path: '/contact',
@@ -43,8 +44,8 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <Details></Details>,
-                loader: () => fetch('Api.json')
+                element: <Private> <Details></Details> </Private>,
+                loader: () => fetch('/Api.json')
             }
         ]
 

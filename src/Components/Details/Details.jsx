@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Details = () => {
@@ -7,6 +9,7 @@ const Details = () => {
     const numId = parseInt(id);
     const data = details.find(data => data.id === numId)
     console.log(data);
+    const { loading } = useContext(AuthContext)
 
     return (
         <div>
@@ -15,7 +18,6 @@ const Details = () => {
                 {/* <button className=" btn -my-24 mx-10 absolute" style={{ background: detail.btn_bg_color }}>Donate ${detail.price} </button> */}
                 <h1 className="font-bold text-3xl pt-5">{data.title}</h1>
                 <h1 className="  pt-5 font-medium text-lg ">{data.details}</h1>
-
             </div>
         </div>
     );
